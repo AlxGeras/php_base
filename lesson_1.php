@@ -14,6 +14,7 @@ $priorityTaskThird = readline('Какая задача стоит перед в�
 $priorityTaskThirdTime = readline('Сколько примерно времени эта задача займет?');
 
 echo $name .', сегодня у вас запланировано 3 приоритетных задачи на день:'.PHP_EOL;
-echo '- ' . $priorityTaskOne  . ' (' . $priorityTaskOneTime . ')'.PHP_EOL;
-echo '- ' . $priorityTaskSecond  . ' (' . $priorityTaskSecondTime . ')'.PHP_EOL;
-echo '- ' . $priorityTaskThird  . ' (' . $priorityTaskThirdTime . ')';
+echo '- ' . $priorityTaskOne  . ' (' . $priorityTaskOneTime . 'ч)'.PHP_EOL;
+echo '- ' . $priorityTaskSecond  . ' (' . $priorityTaskSecondTime . 'ч)'.PHP_EOL;
+echo '- ' . $priorityTaskThird  . ' (' . $priorityTaskThirdTime . 'ч)'.PHP_EOL;
+echo 'Примерное время выполнения плана = '. ($priorityTaskOneTime+ $priorityTaskSecondTime +$priorityTaskThirdTime) .'ч';
