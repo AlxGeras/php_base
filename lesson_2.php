@@ -31,14 +31,17 @@ echo 'Примерное время выполнения плана = '. ($sumOf
 
 // Task 3
 
+do {
 $numberOfFinger = readline('Назоваите номер пальца по счету'.PHP_EOL);
-
+    if((int) $numberOfFinger > 0){
 switch ($numberOfFinger){
     case (($numberOfFinger - 1)%8 == 0): echo 'Большой палец'.PHP_EOL; break;
     case (($numberOfFinger - 2)%8 == 0 || ($numberOfFinger - 8)%8 == 0): echo 'Указательный палец'.PHP_EOL; break;
     case (($numberOfFinger - 3)%8 == 0 || ($numberOfFinger - 7)%8 == 0): echo 'Средний палец'.PHP_EOL; break;
     case (($numberOfFinger - 4)%8 == 0 || ($numberOfFinger - 6)%8 == 0) : echo 'Безымянный палец'.PHP_EOL; break;
     case (($numberOfFinger - 5)%8 == 0): echo 'Мизинец'.PHP_EOL; break;
-}
+        }
+    }
+} while ($numberOfFinger <=0);
 
 
