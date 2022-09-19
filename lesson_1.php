@@ -13,7 +13,7 @@ $priorityTaskSecondTime = readline('Сколько примерно времен
 $priorityTaskThird = readline('Какая задача стоит перед вами сегодня?');
 $priorityTaskThirdTime = readline('Сколько примерно времени эта задача займет?');
 
-echo 'Иван, сегодня у вас запланировано 3 приоритетных задачи на день:'.PHP_EOL;
+echo $name .', сегодня у вас запланировано 3 приоритетных задачи на день:'.PHP_EOL;
 echo '- ' . $priorityTaskOne  . ' (' . $priorityTaskOneTime . ')'.PHP_EOL;
 echo '- ' . $priorityTaskSecond  . ' (' . $priorityTaskSecondTime . ')'.PHP_EOL;
 echo '- ' . $priorityTaskThird  . ' (' . $priorityTaskThirdTime . ')';
